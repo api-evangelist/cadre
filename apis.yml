@@ -1,8 +1,25 @@
 aid: cadre
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cadre.png
 name: Cadre
-description: Cadre is a company surfaced as a portfolio company of a16z, slow-ventures, thrive-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Cadre is a New York-based, technology-driven investment platform that gives individual
+  and institutional investors access to private-market alternatives, historically centered on
+  institutional-quality commercial real estate. Founded in 2014 and backed by investors including
+  Andreessen Horowitz, Thrive Capital, and Slow Ventures, Cadre now operates in partnership with
+  Willow Wealth (Willow Wealth Markets LLC, a FINRA/SIPC broker-dealer formerly known as RealCadre LLC,
+  and Willow Asset Management LLC, an SEC-registered investment adviser) to offer diversified
+  private-market funds alongside traditional stocks and bonds. This is a company profile in the API
+  Evangelist network; Cadre does not currently publish a public API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/cadre/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- FinTech
+- Investment
+- Real Estate
+- Private Markets
+- Wealth Management
+- Alternative Investments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cadre-domain-security.yml
 - type: Website
   url: https://cadre.com
+- type: Login
+  url: https://cadre.com/login/
+- type: TermsOfService
+  url: https://cadre.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://cadre.com/privacy-and-cookies
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
